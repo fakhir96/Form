@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <select name="fashion">
-        <optgroup label="Clothing">
-          <option value="t_shirt">T-Shirts</option>
-          <option value="sweater">Sweaters</option>
-          <option value="coats">Coats</option>
-        </optgroup>
-        <optgroup label="Foot Wear">
-          <option value="sneakers">Sneakers</option>
-          <option value="boots">Boots</option>
-          <option value="sandals">Sandals</option>
-        </optgroup>
-      </select>
-      
-      <h1>Ticket Type</h1>
-<div>
-  <input type="radio" id="child" name="ticket_type" value="child">
-  <label for="child">Child</label>
-</div>
+    <div class="main-container">
+        <div class="left">
+            <div class="logo">
+                <h1>ODIN</h1>
+            </div>
+            <img src="li-zhang-IiLVwx3e8bk-unsplash.jpg" alt="sad">
+        </div>
 
-<div>
-  <input type="radio" id="adult" name="ticket_type" value="adult">
-  <label for="adult">Adult</label>
-</div>
+        <div class="right">
+            <div class="center">
+                <h2>Let's do this</h2>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" placeholder="Alex" required>
+                    </div>
 
-<div>
-  <input type="radio" id="senior" name="ticket_type" value="senior">
-  <label for="senior">Senior</label>
-</div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" placeholder="Walker" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="xyz@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="0312-2131254" pattern="[0-9]{4}-[0-9]{7}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="psw">Password</label>
+                        <input type="text" class="red" id="psw" required minlength="5" maxlength="12">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpsw">Confirm Password</label>
+                        <input type="text" class="red" id="cpsw" required minlength="5" maxlength="12">
+                    </div>
+
+                </div>
+            </div>
+
+            <button type="submit">
+                <span>Create Account</span>
+            </button>
+
+        </div>
+    </div>
 </body>
+
 </html>
